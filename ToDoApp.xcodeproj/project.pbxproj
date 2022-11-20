@@ -48,7 +48,6 @@
 		54730AFE2927C661000AA991 = {
 			isa = PBXGroup;
 			children = (
-				54730B252927C7D3000AA991 /* Task */,
 				54730B092927C661000AA991 /* ToDoApp */,
 				54730B082927C661000AA991 /* Products */,
 			);
@@ -65,6 +64,7 @@
 		54730B092927C661000AA991 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				54730B252927C7D3000AA991 /* Task */,
 				54730B262927C7E5000AA991 /* Delegates */,
 				54730B0E2927C661000AA991 /* ViewController.swift */,
 				54730B272927F5DE000AA991 /* TaskCell.swift */,

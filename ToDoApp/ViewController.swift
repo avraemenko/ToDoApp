@@ -171,6 +171,11 @@ extension ViewController {
     
     func completeTheTask(task : Task){
         task.done.toggle()
+        if let supertask = task.supertask {
+            supertask.done = supertask.subs.reduce(true, { partialResult, task in
+                partialResult && task.done
+            })
+        }
         do {
            try context.save()
             getAllTasks()
