@@ -27,6 +27,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationsService.shared.addListener(self, for: "task") { task in
+            print(task)
+        }
         title = "ToDo List"
         getAllTasks()
         tableView.delegate = self

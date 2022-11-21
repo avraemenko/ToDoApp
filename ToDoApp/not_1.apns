@@ -1,0 +1,23 @@
+{
+    "aps" : {
+        "alert" : {
+            "title": "Hello!",
+            "subtitle": "This is my first Notification",
+            "body": "I sent it!"
+        },
+        "sound": {
+            "name": "default",
+            "critical": 1,
+            "volume": 0.5
+        },
+        "badge": 0,
+        "thread-id": "one",
+        "category": "some"
+    },
+    "task": {
+        "name": "New Task 1",
+        "description": "This is the new Task you need",
+        "dateOfCreation": "18-11-2022"
+    },
+    "Simulator Target Bundle": "ua.edu.ukma.ToDoApp"
+}

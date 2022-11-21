@@ -17,6 +17,9 @@
 		54730B282927F5DE000AA991 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54730B272927F5DE000AA991 /* TaskCell.swift */; };
 		54730B3B292A5440000AA991 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54730B39292A5440000AA991 /* Task+CoreDataClass.swift */; };
 		54730B3C292A5440000AA991 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54730B3A292A5440000AA991 /* Task+CoreDataProperties.swift */; };
+		54730B57292BAA2D000AA991 /* NotificationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54730B56292BAA2D000AA991 /* NotificationsService.swift */; };
+		54730B59292BAE39000AA991 /* not_1.apns in Resources */ = {isa = PBXBuildFile; fileRef = 54730B58292BAE39000AA991 /* not_1.apns */; };
+		54730B5B292BB346000AA991 /* not_2.apns in Resources */ = {isa = PBXBuildFile; fileRef = 54730B5A292BB346000AA991 /* not_2.apns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,10 @@
 		54730B272927F5DE000AA991 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		54730B39292A5440000AA991 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
 		54730B3A292A5440000AA991 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		54730B55292BA73C000AA991 /* ToDoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToDoApp.entitlements; sourceTree = "<group>"; };
+		54730B56292BAA2D000AA991 /* NotificationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsService.swift; sourceTree = "<group>"; };
+		54730B58292BAE39000AA991 /* not_1.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = not_1.apns; sourceTree = "<group>"; };
+		54730B5A292BB346000AA991 /* not_2.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = not_2.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +71,8 @@
 		54730B092927C661000AA991 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				54730B55292BA73C000AA991 /* ToDoApp.entitlements */,
+				54730B1B2927C662000AA991 /* Info.plist */,
 				54730B252927C7D3000AA991 /* Task */,
 				54730B262927C7E5000AA991 /* Delegates */,
 				54730B0E2927C661000AA991 /* ViewController.swift */,
@@ -71,8 +80,10 @@
 				54730B102927C661000AA991 /* Main.storyboard */,
 				54730B162927C662000AA991 /* Assets.xcassets */,
 				54730B182927C662000AA991 /* LaunchScreen.storyboard */,
-				54730B1B2927C662000AA991 /* Info.plist */,
 				54730B132927C661000AA991 /* ToDoApp.xcdatamodeld */,
+				54730B56292BAA2D000AA991 /* NotificationsService.swift */,
+				54730B58292BAE39000AA991 /* not_1.apns */,
+				54730B5A292BB346000AA991 /* not_2.apns */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -154,8 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				54730B1A2927C662000AA991 /* LaunchScreen.storyboard in Resources */,
+				54730B5B292BB346000AA991 /* not_2.apns in Resources */,
 				54730B172927C662000AA991 /* Assets.xcassets in Resources */,
 				54730B122927C661000AA991 /* Main.storyboard in Resources */,
+				54730B59292BAE39000AA991 /* not_1.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54730B57292BAA2D000AA991 /* NotificationsService.swift in Sources */,
 				54730B0F2927C661000AA991 /* ViewController.swift in Sources */,
 				54730B282927F5DE000AA991 /* TaskCell.swift in Sources */,
 				54730B0B2927C661000AA991 /* AppDelegate.swift in Sources */,
@@ -317,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToDoApp/ToDoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VNU8KKW4GG;
@@ -345,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToDoApp/ToDoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VNU8KKW4GG;
